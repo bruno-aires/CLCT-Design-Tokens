@@ -1,0 +1,57 @@
+{
+  "name": "@esri/calcite-design-tokens",
+  "version": "0.1.0",
+  "description": "Esri's Calcite Design System Tokens",
+  "homepage": "https://github.com/Esri/calcite-design-tokens",
+  "keywords": [
+    "Calcite",
+    "Calcite Design System",
+    "design tokens",
+    "tokens"
+  ],
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Esri/calcite-styles.git"
+  },
+  "author": {
+    "name": "Esri"
+  },
+  "contributors": [
+    {
+      "name": "Ali Stump",
+      "email": "astump@esri.com"
+    },
+    {
+      "name": "Erik Harper-Dicianno",
+      "email": "eharperdicianno@esri.com"
+    },
+    {
+      "name": "Bruno Aires",
+      "email": "baires@esri.com"
+    },
+    {
+      "name": "Jacques Keet",
+      "email": "jkeet@esri.com"
+    },
+    {
+      "name": "Manuela Costa",
+      "email": "mcosta@esri.com"
+    }
+  ],
+  "license": "SEE LICENSE IN README.md",
+  "bugs": {
+    "url": "https://github.com/esri/calcite-design-tokens/issues"
+  },
+  "scripts": {
+    "test": "echo 'No Tests yet, what are you doing?'",
+    "build": "npm run build:transformer && npm run build:sd",
+    "build:sd": "style-dictionary build",
+    "build:transformer": "token-transformer tokens sd-tokens/output.json",
+    "release": "echo 'release is still TBD. Please message Ali Stump or Erik Harper-Dicianno for more information."
+  },
+  "devDependencies": {
+    "style-dictionary": "^3.7.1",
+    "token-transformer": "^0.0.27"
+  }
+}
